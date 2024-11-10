@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Self Notes || PDF </title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Boxicons CDN Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="icon" href="https://res.cloudinary.com/dyqlcy4nz/image/upload/v1729954420/selfnotex/cdcv64nbixwlwc8wu30n.png">
+    <link rel="stylesheet" href="pdf.css">
+</head>
+<body>
+    <div class="main-pdf">
+        <span class="close-pdf">
+            <i class="fa-regular fa-circle-xmark" id="closes"></i>
+        </span>
+        <iframe src="" frameborder="0" id="iframe_pdf"></iframe>
+    </div>
+    <script src="https://kit.fontawesome.com/7967a222d3.js" crossorigin="anonymous"></script>
+    <script>
+
+var iframe =document.getElementById("iframe_pdf")
+        window.onload=function(){
+            var pdf_link = localStorage.getItem("chapter")
+            // alert(pdf_link)
+            iframe.src=pdf_link;
+        }
+var close = document.getElementById("closes")
+close.onclick=function(){
+    window.open("../../index.html", "_parent")
+}
+    </script>
+</body>
+
+</html>

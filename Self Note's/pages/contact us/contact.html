@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Self Notes || Contact Us || Upload Note's </title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Boxicons CDN Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/pages.css">
+
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon"
+        href="https://res.cloudinary.com/dyqlcy4nz/image/upload/v1729954420/selfnotex/cdcv64nbixwlwc8wu30n.png">
+</head>
+
+<body>
+
+
+
+    <nav id="nav_b" class="autohide navbarx">
+
+        <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo"><a href="../../index.html"><i class="ri-booklet-fill"></i> Self Note's</a></div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo-name"><i class="ri-booklet-fill"></i></span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="links">
+                    <li><a href="../../index.html">HOME</a></li>
+
+
+                    <li><a href="../my notes/my_note.html">MY NOTES</a></li>
+
+
+
+                    <!-- <li><a href="#">PDF VIEWER</a></li> -->
+                    <li><a href="../pdf viewer/pdf_view.html">PDF VIEWER</a></li>
+                    <li><a href="#" style="color: black; font-weight: bold;">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="search-box">
+                <i class='bx bx-search' style="display: none;"></i>
+                <div class="input-box">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="contact-main">
+        <span class="bee_top" style="margin-top: 80px;">
+            <h2> <i class='fas fa-headset' id="hea" style="font-size: 35px;"></i> Contact Us</h2>
+        </span>
+
+        <div class="contact-child animate__animated animate__pulse" style="display: block;" id="c_text">
+            <div class="contact-img"><img
+                    src="https://res.cloudinary.com/dyqlcy4nz/image/upload/v1730015424/selfnotex/a9d4tqqvqqiaeb2oyxvd.png"
+                    alt="" draggable="false"></div>
+            <div class="contact-text">
+                <span style="margin-top: 10px;  display: block;" id="k"><i class='fas fa-headset' id="hea"></i> Get in
+                    touch</span>
+                <br>
+                <form action="https://api.web3forms.com/submit" method="POST" id="form_contact">
+                    <input type="hidden" name="access_key" value="36f225a5-415d-4b34-a49b-5231297c715c">
+                    <div class="text-area">
+                        <span><i class="fa-solid fa-user"></i></span>
+                        <input type="text" placeholder="Name" name="name" required>
+                    </div>
+                    <div class="text-area">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="text-area">
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <input type="number" placeholder="Phone no." name="phone_no" required>
+                    </div>
+                    <div class="text-area " id="aa">
+                        <span><i class="fa-solid fa-message"></i></span>
+                        <textarea name="message" id="" placeholder="Message" required></textarea>
+                    </div>
+
+
+
+                    <!-- <button class="education-button b" id="btn" type="submit"> Submit <i class="fa fa-paper-plane" aria-hidden="true"></i></button> -->
+                    <div class="btn-div">
+
+                        <button class="btn-n" type="button" id="upload_btn" style="width: 150px; font-size: 11px;" onclick="upload()">
+                            Upload Note's &nbsp
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            <button class="btn-n btn-s" type="submit" onclick="sents()" id="sub_cont"> Submit &nbsp <i
+                                    class="fa fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                    </div>
+                </form>
+
+
+
+            </div>
+        </div>
+        <div class="contact-child animate__animated animate__pulse" style="display: none;" id="upl_text">
+            <div class="contact-img" id="ui"><img
+                    src="https://res.cloudinary.com/dyqlcy4nz/image/upload/v1730015425/selfnotex/exz9on6nateyh8nlldow.png"
+                    alt="" draggable="false" style="width: 150%;"></div>
+            <div class="contact-text">
+                <span style="margin-top:10px;  display: block;"><i class="fa-solid fa-cloud-arrow-up" id="hea"></i>
+                    Upload
+                    your note's</span>
+                <br>
+                <form action="https://api.web3forms.com/submit" method="POST" id="form-upload">
+                    <!-- 36f225a5-415d-4b34-a49b-5231297c715c -->
+                    <input type="hidden" name="access_key" value="36f225a5-415d-4b34-a49b-5231297c715c">
+                    <div class="text-area">
+                        <span><i class="fa-solid fa-user"></i></span>
+                        <input type="text" placeholder="Name" name="name" required>
+                    </div>
+                    <div class="text-area">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="text-area">
+                        <span><i class="fa fa-link" aria-hidden="true"></i></span>
+                        <input type="text" placeholder="G drive Link" name="Gdrive_link" required>
+                    </div>
+                    <div class="text-area " id="aa">
+                        <span><i class="fa fa-sticky-note-o" aria-hidden="true"></i></span>
+                        <textarea name="ch_name" id="" placeholder="Chapter name" required></textarea>
+                    </div>
+
+
+
+                    <!-- <button class="education-button b" id="btn" type="submit"> Submit <i class="fa fa-paper-plane" aria-hidden="true"></i></button> -->
+                    <div class="btn-div">
+
+                        <button class="btn-n" type="button" id="cont_btn" style="width: 160px;" onclick="contact()">
+                            Contact Us &nbsp <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            <button class="btn-n btn-s" type="submit" id="upload-sub" onclick="sents()"> Submit &nbsp <i
+                                    class="fa fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                    </div>
+                </form>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3 style="color: #ccc; ">Self Note's</h3>
+                <p>Thank you for Contact Us, You can ask <span style="color: rgb(204, 12, 12); font-weight: bold;">
+                        Problem, Recommend, Correction </span>and also upload your note's here<br /> <br /> Keep
+                    Rising 🚀. And learn</p>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="../../index.html"><i class="fas fa-chevron-circle-right"></i> Home</a>
+                <a href="../my notes/my_note.html"><i class="fas fa-chevron-circle-right"></i> My Note's</a>
+                <!-- <a href="#bee"><i class="fas fa-chevron-circle-right"></i> Electrical</a> -->
+                <!-- <a href="#am"><i class="fas fa-chevron-circle-right"></i> Mechanics</a> -->
+                <!-- <a href="#math"><i class="fas fa-chevron-circle-right"></i> Maths</a> -->
+                <!-- <a href="#phy"><i class="fas fa-chevron-circle-right"></i> Physics</a> -->
+                <a href="../pdf viewer/pdf_view.html"><i class="fas fa-chevron-circle-right"></i> PDF Viewer</a>
+                <a href="#" onclick="upload()"><i class="fas fa-chevron-circle-right"></i> Upload Your Note's</a>
+                <a href="#" onclick="contact()"><i class="fas fa-chevron-circle-right"></i> Contact Us</a>
+                <!-- <a id=""><i class="fas fa-chevron-circle-righ1t"></i> Rate Us</a> -->
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <p> <i class="fas fa-phone"></i>+91 9350568XXX</p>
+                <p> <i class="fas fa-envelope"></i>bhavneetv295@gmail.com</p>
+                <p> <i class="fas fa-map-marked-alt"></i>Ambala, India-134203</p>
+                <div class="share">
+
+                    <a href="https://www.linkedin.com/in/bhavneet-verma-0a1899307" class="fab fa-linkedin"
+                        aria-label="LinkedIn" target="_blank"></a>
+                    <a href="https://github.com/bhavneetv" class="fab fa-github" aria-label="GitHub"
+                        target="_blank"></a>
+                    <a href="mailto:bhavneetv295@gmail.com" class="fas fa-envelope" aria-label="Mail"
+                        target="_blank"></a>
+                    <a href="https://twitter.com/bhavneet__verma" class="fa-brands fa-x-twitter" aria-label="Twitter" ></a>
+                        <!-- <a href="https://t.me/lifecode5" class="fab fa-telegram-plane" aria-label="Telegram"
+                        target="_blank"></a> -->
+                </div>
+            </div>
+        </div>
+
+        <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a
+                href="https://www.linkedin.com/in/bhavneet-verma-0a1899307"> bhavneet verma</a></h1>
+
+    </section>
+    <script src="../../js/nav.js"></script>
+    <!-- <script src="../../js/page.js"></script> -->
+    <script src="https://kit.fontawesome.com/7967a222d3.js" crossorigin="anonymous"></script>
+    <script>
+
+        var u_b = document.getElementById("upload_btn")
+        var c_b = document.getElementById("cont_btn")
+        var u_t = document.getElementById("upl_text")
+        var c_t = document.getElementById("c_text")
+        var form_c = document.getElementById("form_contact")
+        var form_u = document.getElementById("form-upload")
+        var upload_sub = document.getElementById("upload-sub")
+        var cont_sub = document.getElementById("sub_cont")
+        // alert(u_t.style.display)
+
+        form_u.onsubmit = function () {
+            upload_sub.style.backgroundColor = "#008000"
+            upload_sub.innerHTML = "send " + '<i class="fa-solid fa-check"></i>'
+
+            setTimeout(() => {
+                upload_sub.innerHTML = "Submit &nbsp " + '<i class="fa fa-paper-plane"aria-hidden="true"></i>'
+                upload_sub.style.backgroundColor = "rgba(144, 30, 167, 0.616)"
+            }, 3000);
+
+
+        }
+
+        form_c.onsubmit = function () {
+            // alert()
+            cont_sub.style.backgroundColor = "#008000"
+            cont_sub.innerHTML = "send " + '<i class="fa-solid fa-check"></i>'
+
+            setTimeout(() => {
+                cont_sub.innerHTML = "Submit &nbsp " + '<i class="fa fa-paper-plane"aria-hidden="true"></i>'
+                cont_sub.style.backgroundColor = "rgba(144, 30, 167, 0.616)"
+            }, 3000);
+
+
+        }
+
+        function upload() {
+            c_t.style.display = "none";
+            u_t.style.display = "block"
+        }
+        function contact() {
+            u_t.style.display = "none";
+            c_t.style.display = "block"
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

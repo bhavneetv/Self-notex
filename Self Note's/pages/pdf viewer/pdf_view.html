@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Self Notes || PDF Viewer </title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Boxicons CDN Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/pages.css">
+    <link rel="stylesheet" href="pdf-v.css">
+    <link rel="icon"
+        href="https://res.cloudinary.com/dyqlcy4nz/image/upload/v1729954420/selfnotex/cdcv64nbixwlwc8wu30n.png">
+</head>
+
+<body>
+    <div class="pdf-view-upload-main" id="pdf-upload" >
+        <div class="pdf-view-upload-child animate__animated animate__fadeIn" >
+            <div class="pdf-view">
+                <input type="file" id="pdf-input" >
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <h1 style="margin-left: -10px;">Click Here To Upload PDF</h1>
+
+                <h3>Supported document PDF</h3>
+                <h3>Only For IOS & Window</h3>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="pdf-viewer-main" style="display: none;" id="pdf-v">
+        <div class="pdf-viewer-child-btn">
+            <button class="pdf-view-btn" id="next-btn"><i class="fa-solid fa-file-pdf"></i> Open New PDF</button>
+            <a href="../../index.html"> <button class="pdf-view-btn"><i class="fa-solid fa-house"></i> Back To
+                    Home</button></a>
+
+        </div>
+        <div class="pdf-view-child-iframe">
+           <iframe src="" frameborder="0" id="iframe-pdf-viewer"></iframe>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://kit.fontawesome.com/7967a222d3.js" crossorigin="anonymous"></script>
+<script src="pdf-view.js"></script>
+
+</html>

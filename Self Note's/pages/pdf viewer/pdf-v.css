@@ -1,0 +1,128 @@
+body{
+    background-color: lightblue;
+}
+.pdf-viewer-main{
+    height: 100%;
+    width: 100%;
+    border: 3px solid white;
+}
+.pdf-viewer-child-btn{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: #fff;
+    align-items: center ;
+}
+
+.pdf-viewer-child-btn button{
+    height: 40px;
+    width: 170px;
+    border: none;
+    background-color: lavender;
+    border-radius: 17px;
+    font-size: 13px;
+    color: black;
+    cursor: pointer;
+    box-shadow: rgba(148, 148, 187, 0.308) 0px 7px 29px 0px;
+    transition: ease-out 0.3s;
+}
+
+.pdf-viewer-child-btn button:hover{
+    
+    box-shadow: rgba(98, 98, 129, 0.308) 0px 7px 29px 0px;
+    background-color: rgb(148, 148, 187);
+    color: white;
+}
+.pdf-view-child-iframe{
+    display: block;
+width: 100%;
+height: calc(100% - 70px);
+height: 91.4vh;
+/* border: 1px solid cadetblue; */
+
+}
+#iframe-pdf-viewer{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:600px) {
+    .pdf-viewer-child-btn button{
+        width: 120px;
+        font-size: 12px;
+        font-weight: 500;
+    }   
+}
+
+.pdf-view-upload-main{
+
+    height: 100vh;
+    width: 100vw;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pdf-view-upload-child{
+    height: 350px;
+    width: 500px;
+    border-color: lavender;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    
+}
+
+
+.pdf-view{
+    height: 80%;
+    width: 80%;
+    border: 5px dashed #ccc;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+}
+
+#pdf-input{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.pdf-view i{
+    color: royalblue;
+    font-size: 4em;
+}
+.pdf-view h1{
+    text-align: center;
+    font-size: 2.5em;
+
+}
+.pdf-view h3{
+    font-size: 1.3em;
+    color: #a7a7a7;
+}
+@media (max-width:600px) {
+    .pdf-view-upload-child{
+        width: 90%;
+        height: 300px;
+    }
+    
+    .pdf-view{
+        font-size: 9px;
+    }
+}
